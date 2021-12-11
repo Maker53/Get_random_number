@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		85C1A45B27630FD800A7DE9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C1A45A27630FD800A7DE9F /* AppDelegate.swift */; };
 		85C1A45D27630FD800A7DE9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C1A45C27630FD800A7DE9F /* SceneDelegate.swift */; };
-		85C1A45F27630FD800A7DE9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C1A45E27630FD800A7DE9F /* ViewController.swift */; };
+		85C1A45F27630FD800A7DE9F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C1A45E27630FD800A7DE9F /* MainViewController.swift */; };
 		85C1A46227630FD800A7DE9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C1A46027630FD800A7DE9F /* Main.storyboard */; };
 		85C1A46427630FDB00A7DE9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C1A46327630FDB00A7DE9F /* Assets.xcassets */; };
 		85C1A46727630FDB00A7DE9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C1A46527630FDB00A7DE9F /* LaunchScreen.storyboard */; };
+		85E3DD2A2764D00F00365AB7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E3DD292764D00F00365AB7 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		85C1A45727630FD800A7DE9F /* Get_random_number.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Get_random_number.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C1A45A27630FD800A7DE9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85C1A45C27630FD800A7DE9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85C1A45E27630FD800A7DE9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85C1A45E27630FD800A7DE9F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		85C1A46127630FD800A7DE9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85C1A46327630FDB00A7DE9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85C1A46627630FDB00A7DE9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85C1A46827630FDB00A7DE9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85E3DD292764D00F00365AB7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "Get_random_number/View Controllers/SettingsViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,8 @@
 		85C1A471276312FD00A7DE9F /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				85C1A45E27630FD800A7DE9F /* ViewController.swift */,
+				85E3DD292764D00F00365AB7 /* SettingsViewController.swift */,
+				85C1A45E27630FD800A7DE9F /* MainViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -170,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85C1A45F27630FD800A7DE9F /* ViewController.swift in Sources */,
+				85C1A45F27630FD800A7DE9F /* MainViewController.swift in Sources */,
 				85C1A45B27630FD800A7DE9F /* AppDelegate.swift in Sources */,
 				85C1A45D27630FD800A7DE9F /* SceneDelegate.swift in Sources */,
+				85E3DD2A2764D00F00365AB7 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +327,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T94XUBZ99A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Get_random_number/Info.plist;
+				INFOPLIST_FILE = Get_random_number/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -352,7 +356,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T94XUBZ99A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Get_random_number/Info.plist;
+				INFOPLIST_FILE = Get_random_number/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

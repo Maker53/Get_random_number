@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="973.60000000000002" y="83.208395802098963"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="bW8-h3-4Nn">
             <objects>
-                <viewController id="i7P-NY-P2c" sceneMemberID="viewController">
+                <viewController id="i7P-NY-P2c" customClass="SettingsViewController" customModule="Get_random_number" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tex-Mj-BdW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,6 +121,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <segue destination="Cof-mh-MD4" kind="unwind" unwindAction="unwindFor:" id="rmA-hy-yVP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWu-NW-MUc">
                                         <rect key="frame" x="0.0" y="56" width="61" height="36"/>
@@ -129,6 +132,9 @@
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" systemColor="systemRedColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cancelButtonPressed:" destination="i7P-NY-P2c" eventType="touchUpInside" id="99m-IA-sfX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -143,8 +149,13 @@
                             <constraint firstItem="gpg-04-s1F" firstAttribute="leading" secondItem="MNE-MB-q0v" secondAttribute="leading" constant="60" id="s72-fH-Je5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="maximumValueTF" destination="RZa-UO-KuU" id="yJK-VH-cAi"/>
+                        <outlet property="minimumValueTF" destination="9ON-QG-Uyc" id="43H-fl-dxX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gMO-1L-288" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Cof-mh-MD4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1792.8" y="82.3088455772114"/>
         </scene>
